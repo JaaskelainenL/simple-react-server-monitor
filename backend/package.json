@@ -1,0 +1,16 @@
+{
+  "name": "server-monitor-react-backend",
+  "version": "1.0.0",
+  "description": "API for my simple remote recourse manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Jääskeläinen L",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "systeminformation": "^5.8.0"
+  }
+}
