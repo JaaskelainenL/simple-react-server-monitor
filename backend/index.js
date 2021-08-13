@@ -17,10 +17,11 @@ function getData(){
     
     si.cpuTemperature().then(tmp=> temp = tmp.main);
     si.mem().then(m => mem = {used: m.active, total: m.total}); 
+    si.osInfo().then(os => osname = os.distro);
 
     try{
         content = {
-            info: "Simple React System Monitor Connected!",
+            info: "Connected to: "+osname,
             cpuTemp: temp,
             memUsed: mem.used,
             memTotal: mem.total,
